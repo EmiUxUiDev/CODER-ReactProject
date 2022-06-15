@@ -3,7 +3,9 @@ div.nav-container{
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: rgba(32, 32, 32, 0.473);
+    background: rgba(51, 51, 51, 0.25);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(82, 82, 82, 0.329)
 }
 
 div.logo-container img{
@@ -27,6 +29,7 @@ div.shop-container .shop-btn{
     border: 0.5px solid #fff;
     border-radius: 50%;
     background-color: rgba(53, 53, 53, 0.5);
+    transition: all 200ms ease;
 }
 
 div.shop-container .shop-btn .shop-img{
@@ -36,4 +39,8 @@ div.shop-container .shop-btn .shop-img{
     display: flex;
     align-items: center;
     justify-content: center;
+} 
+div.shop-container .shop-btn:hover{
+    background-color:rgb(253, 169, 59) ;
+    
 } 

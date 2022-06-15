@@ -1,15 +1,15 @@
 import React from 'react'
 import '../styles/front.css'
 
-export default function Front(){
-    return(
+export default function Front() {
+    return (
         <section className='front-section'>
-            
-        <div className='text-container'>
-            <h1>Disfruta tú gin, a tú forma...</h1>
-            <p>Todos tenemos algo de TOC con lo que nos gusta, nosotros te entendemos, por eso, abrimos este lugar para vos!</p>
-        </div>
-        <img className='front-img' src={require('../img/gyn-cup.png')} alt='Gyn cup served'/>
-    </section>
+            <div className='front-text'>
+                <h1>Enjoy your Gin, do it your way...</h1>
+                <p>We all have a bit of TOC with all that thinks we love...<br/>Got it! and that's why we're sharing this place with you!</p>
+                <button className='front-btn'>Let's drink!</button>
+            </div>
+            <img className='front-img' src={require('../img/gyn-cup.png')} alt='Gyn cup served' />
+        </section>
     )
 }

@@ -1,28 +1,48 @@
 section.front-section {
     width: 100%;
-    height: 200px;
-    margin-top: 1.5rem;
+    height: 450px;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 1rem;
+    overflow: hidden;
 }
 
-div.text-container{
+div.front-text{
     width: 30%;
-    text-align: right;
+    text-align: left;
+    
 }
-div.text-container h1{
+div.front-text h1{
     color: #fff;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 4rem;
 }
-div.text-container p{
-    color: rgb(180, 180, 180);
-    padding: 1rem;
+div.front-text p{
+    color: rgb(214, 214, 214);
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
 }
 
 section img.front-img{
     z-index: -1;
-    width: 400px;
-    padding: 50px 0px 0px 0px;
-    margin-right: -80px;
+    width: 450px;
+    filter: drop-shadow(15px 5px 15px rgb(0, 0, 0));
+}
+section .front-text .front-btn{
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+    color: rgb(235, 235, 235);
+    background: linear-gradient(0deg, #e97c00 80%, rgb(255, 189, 113) 100%);
+    border:1px solid rgb(146, 146, 146);
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+}
+section .front-text .front-btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 25px 1px rgb(255, 189, 113) ;
 }

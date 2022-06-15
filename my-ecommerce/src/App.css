@@ -4,6 +4,7 @@
     box-sizing:border-box;
     font-family: 'Comfortaa', sans-serif;
 }
+
 body{
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgb(14, 14, 17) 0%, rgb(5, 5, 19) 21%, rgba(50, 1, 25, 1) 100%);
