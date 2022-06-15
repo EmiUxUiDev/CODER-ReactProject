@@ -1,0 +1,39 @@
+div.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgba(32, 32, 32, 0.473);
+}
+
+div.logo-container img{
+    width: 120px;
+}
+
+div.menu-container ul{
+    display: flex;
+    padding:0 1rem;
+}
+
+div.menu-container ul li{
+    padding: 1rem;
+    list-style-type: none;
+    color: #fff;
+}
+
+
+div.shop-container .shop-btn{
+    padding: 0.4rem;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(53, 53, 53, 0.5);
+}
+
+div.shop-container .shop-btn .shop-img{
+    width: 1.2rem;
+    height: 1.2rem;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
