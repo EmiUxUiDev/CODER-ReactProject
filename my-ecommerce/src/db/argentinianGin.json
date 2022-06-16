@@ -1,0 +1,50 @@
+[
+    {   "id": 1,
+        "brand": "500 Noches Pink",
+        "wand": "Pink",
+        "contains": "500ml",
+        "origin": "Argentina",
+        "recipe": "Distilled with only the finest French blackcurrants, vanilla, and the four classic London Dry botanicals - piney juniper, peppery coriander, aromatic angelica, and sweet liquorice. Delicious flavour that evokes the boldness of Charles himself, as well as the mystery and decadence of France.",
+        "stock": 10
+    },
+    {   "id": 2,
+        "brand": "Aconcagua Dry",
+        "wand": "London Dry",
+        "contains": "700ml",
+        "origin": "Argentina",
+        "recipe": "A handcrafted gin, elaborated in Buenos Aires. Its recipe is compoused mainly by 7 botanicals: Juniper berries, Coriander, Angelica root, lemon peel, Cassia, almond and regaliz, that in a delicated maceration process and destilation in copper alembic, we get our gin",
+        "stock": 15
+    },
+    {   "id": 3,
+        "brand": "Aconcagua Blue Special edition",
+        "wand": "Lime",
+        "contains": "500ml",
+        "origin": "Argentina",
+        "recipe": "A handcrafted gin, elaborated in Buenos Aires. Its recipe is compoused mainly by 7 botanicals and an special touch of 2 ingedients(lime and lemongrass): Juniper berries, Coriander, Angelica root, lemon peel, Cassia, almond and regaliz, that in a delicated maceration process and destilation in copper alembic, we get our gin",
+        "stock": 8
+    },
+    {   "id": 4,
+        "brand": "Aconcagua White Special edition",
+        "wand": "Cardamom",
+        "contains": "500ml",
+        "origin": "Argentina",
+        "recipe": "A handcrafted gin, elaborated in Buenos Aires. Its recipe is compoused mainly by 7 botanicals and an special touch of 2 ingedients(cardamom and lemongrass): Juniper berries, Coriander, Angelica root, lemon peel, Cassia, almond and regaliz, that in a delicated maceration process and destilation in copper alembic, we get our gin",
+        "stock": 12
+    },
+    {   "id": 5,
+        "brand": "El alquimista",
+        "wand": "London Dry",
+        "contains": "500ml",
+        "origin": "Córdoba, Argentina",
+        "recipe": "A handcrafted gin, elaborated in Córdoba. Its recipe is compoused by botanicals and regional mountain spring water. Juniper berries, Coriander, Angelica root, grapefruit peel, Cassia, cucumber and regaliz, that in a delicated maceration process and destilation in copper alembic, makes it an special and flavored craft gin ",
+        "stock": 20
+    },
+    {   "id": 6,
+        "brand": "Principe de Los Apostoles",
+        "wand": "Nuevo mundo",
+        "contains": "500ml",
+        "origin": "Argentina",
+        "recipe": "Distilled in 200 litres batches in a copper still its as artisanal as it gets. Each botanical is individually macerated, the main one is mate leaves which is commonly used to preapare mate an argentinian tradition. Each maceration is then filtered and blended according to tato's original recipe and the batch is then distilled.The result of the distillation is bottled and numbered.",
+        "stock": 10
+    }
+]   
