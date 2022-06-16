@@ -1,7 +1,9 @@
 import './App.css';
 import Front from './components/Front.js';
 import Navbar from './components/Navbar.js';
-import Info from './components/Info.js'
+import Info from './components/Info.js';
+
+
 function App() {
   return (
     <div className="App">
@@ -11,5 +13,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

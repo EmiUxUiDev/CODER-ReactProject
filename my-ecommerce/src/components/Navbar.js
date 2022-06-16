@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/navbar.css'
+import WidgetShop from './WidgetShop.js';
 
 export default function Navbar(){
     return(
@@ -20,9 +21,7 @@ export default function Navbar(){
                     </li>
                 </ul>
             </div>
-            <div className='shop-container'>
-                <button className='shop-btn'><img className='shop-img' src={require('../img/icons/shopping-bag.png')} alt='Shop icon'/></button>
-            </div>
+            <WidgetShop />
         </div>
             
     )
