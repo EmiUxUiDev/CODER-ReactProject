@@ -5,11 +5,11 @@ div.nav-container{
     padding: 0 1rem;
     background: rgba(51, 51, 51, 0.25);
     backdrop-filter: blur(3px);
-    border-bottom: 1px solid rgba(82, 82, 82, 0.329)
+    border-bottom: 1px solid var(--grey-transparent)
 }
 
 div.logo-container img{
-    width: 120px;
+    width: 100px;
 }
 
 div.menu-container ul{
@@ -21,4 +21,8 @@ div.menu-container ul li{
     padding: 1rem;
     list-style-type: none;
     color: #fff;
+}
+
+div.menu-container ul li:hover{
+    filter: drop-shadow(8px 8px 8px var(--clr-light-grey));
 }

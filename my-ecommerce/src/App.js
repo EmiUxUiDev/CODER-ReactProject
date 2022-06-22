@@ -1,17 +1,18 @@
 import './App.css';
-import Front from './components/Front.js';
+import ItemListContainer from './components/ItemListContainer.js';
 import Navbar from './components/Navbar.js';
 import Info from './components/Info.js';
-import Smallcard from './components/Smallcard';
+import Smallcard from './components/Smallcard.js';
 import argentinianGin from './db/argentinianGin.json'
+// import Gins from './components/Gins.js'
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Front />
+      <ItemListContainer bebida='Gin'/>
       <Info />
-      <Smallcard props={argentinianGin[0]} />
+      <Smallcard />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/navbar.css'
-import WidgetShop from './WidgetShop.js';
+import CartWidget from './CartWidget.js';
 
 export default function Navbar(){
     return(
@@ -21,7 +21,7 @@ export default function Navbar(){
                     </li>
                 </ul>
             </div>
-            <WidgetShop />
+            <CartWidget />
         </div>
             
     )

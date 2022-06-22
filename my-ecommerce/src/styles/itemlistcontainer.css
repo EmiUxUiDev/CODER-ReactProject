@@ -1,4 +1,4 @@
-section.front-section {
+section.item-section {
     width: 100%;
     height: 450px;
     margin-top: 2rem;
@@ -6,43 +6,45 @@ section.front-section {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-div.front-text{
+div.item-text{
     width: 30%;
     text-align: left;
     
 }
-div.front-text h1{
-    color: #fff;
+div.item-text h1{
+    color: var(--clr-secondary) ;
     font-size: 3rem;
     letter-spacing: 1px;
     line-height: 4rem;
 }
-div.front-text p{
-    color: rgb(214, 214, 214);
+div.item-text p{
+    color: var(--clr-light-grey);
     letter-spacing: 1px;
     margin-top: 1.5rem;
+    font-family: var(--font-2) ;
 }
 
-section img.front-img{
+section img.item-img{
     z-index: -1;
     width: 450px;
     filter: drop-shadow(15px 5px 15px rgb(0, 0, 0));
 }
-section .front-text .front-btn{
+section .item-text .item-btn{
     margin-top: 1.5rem;
     padding: 0.5rem 0.8rem;
     font-size: 1.1rem;
-    color: rgb(235, 235, 235);
-    background: linear-gradient(0deg, #e97c00 80%, rgb(255, 189, 113) 100%);
+    color: var(--clr-light-grey);
+    background: linear-gradient(0deg, var(--clr-secondary) 75%, var(--clr-secondary-hover) 100%);
     border:1px solid rgb(146, 146, 146);
-    border-radius: 30px;
+    border-radius: var(--rnd-strong);
+    z-index: 20;
     transition: all 200ms ease-in-out;
 }
-section .front-text .front-btn:hover{
+section .item-text .item-btn:hover{
     color: #fff;
     border: 1px solid #fff;
-    box-shadow: 0px 0px 25px 1px rgb(255, 189, 113) ;
+    box-shadow: 0px 0px 25px 1px var(--clr-secondary-hover) ;
 }

@@ -1,12 +1,12 @@
-div.shop-container .shop-btn{
+div.cart-container .cart-btn{
     padding: 0.4rem;
     border: 0.5px solid #fff;
     border-radius: 50%;
-    background-color: rgba(53, 53, 53, 0.5);
+    background-color: var(--grey-transparent);
     transition: all 200ms ease;
 }
 
-div.shop-container .shop-btn .shop-img{
+div.cart-container .cart-btn .cart-img{
     width: 1.2rem;
     height: 1.2rem;
     padding: 1px;
@@ -14,7 +14,7 @@ div.shop-container .shop-btn .shop-img{
     align-items: center;
     justify-content: center;
 } 
-div.shop-container .shop-btn:hover{
-    background-color:rgb(253, 169, 59) ;
-    
+div.cart-container .cart-btn:hover{
+    background-color:  var(--clr-primary);
+    transform: rotate(-120deg);
 } 
