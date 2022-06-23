@@ -10,6 +10,7 @@ div.nav-container{
 
 div.logo-container img{
     width: 100px;
+    cursor: pointer;
 }
 
 div.menu-container ul{
@@ -21,6 +22,7 @@ div.menu-container ul li{
     padding: 1rem;
     list-style-type: none;
     color: #fff;
+    cursor: pointer;
 }
 
 div.menu-container ul li:hover{

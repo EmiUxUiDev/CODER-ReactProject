@@ -41,6 +41,7 @@ section .item-text .item-btn{
     border:1px solid rgb(146, 146, 146);
     border-radius: var(--rnd-strong);
     z-index: 20;
+    cursor: pointer;
     transition: all 200ms ease-in-out;
 }
 section .item-text .item-btn:hover{

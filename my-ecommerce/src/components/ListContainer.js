@@ -14,7 +14,7 @@ export default function ListContainer() {
 
     return (
         <section className='wrapper-list'>
-            {products && products.map(gin=> <Item brand={gin.brand} path={gin.path} recipe={gin.recipe} />)}
+            {products && products.map(gin=> <Item key={gin.id} brand={gin.brand} path={gin.path} summary={gin.summary} />)}
         </section>
     )
 }
