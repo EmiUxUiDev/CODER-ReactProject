@@ -1,4 +1,5 @@
 .counter-wrapper{
+    position: relative;
     width: 200px;
     margin: 1rem auto;
     padding: 1rem;
@@ -8,6 +9,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var( --white-transparent);
+    
 }
 
 .counter-wrapper p{
@@ -22,8 +24,21 @@
     align-items: center;
     justify-content: space-between;
 }
-img#dwn, img#up{
+
+.btn{
+    border: none;
+    background: none;
+}
+#dwn, #up{
     width: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+#dwn:hover{
+    transform: translateY(3px);
+}
+#up:hover{
+    transform: translateY(-3px);
 }
 
 .add-btn{
@@ -42,10 +57,26 @@ img#dwn, img#up{
 .add-btn:hover{
     color: #fff;
     border: 1px solid #fff;
-    box-shadow: 0px 0px 25px 1px var(--clr-secondary-hover) ;
+    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;
 }
 
 #count{
     font-size: 1.8rem;
     margin-top: -0.4rem;
+}
+.reset-btn{
+    margin-top: 1rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: var(--rnd-strong);
+    z-index: 20;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;  
+}
+
+.reset-btn:hover{
+    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;  
 }
