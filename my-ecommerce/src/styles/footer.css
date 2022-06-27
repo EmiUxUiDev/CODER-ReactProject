@@ -1,0 +1,49 @@
+.wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid var(--white-transparent);
+}
+.brand-container{
+    display: flex;
+    align-items: center;   
+}
+.big-logo{
+    width: 70px;
+    margin-left: -7rem;
+    padding: 0.5rem;
+}
+.wrapper p{
+    color: #fff;
+    font-family: var(--font1);
+    font-style: normal;
+    margin-bottom: -0.8rem;
+}
+
+
+
+spam.menu-container ul{
+    color: #fff;
+    list-style-type:none;
+    display: flex;
+}
+
+spam.menu-container ul li{
+    padding: 1rem;
+}
+
+spam.social-container{
+    display: flex;
+    align-items: center;
+}
+
+spam.social-container a{
+    padding: 1rem;
+    text-decoration: none;
+}
+spam.social-container a i{
+    font-family: var(--font1);
+    font-style: normal;
+    color: var(--clr-secondary-hover);
+}

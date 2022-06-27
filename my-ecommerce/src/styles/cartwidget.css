@@ -1,3 +1,6 @@
+div.cart-container{
+    display: flex;
+}
 div.cart-container .cart-btn{
     padding: 0.4rem;
     border: 0.5px solid #fff;
@@ -18,3 +21,16 @@ div.cart-container .cart-btn:hover{
     background-color:  var(--clr-primary);
     transform: rotate(-120deg);
 } 
+.cart-item{
+    width: 17px;
+    height: 17px;
+    margin-left: -5px;
+    border: none;
+    border-radius: var(--rnd);
+    background-color: var(--clr-secondary);
+}
+.cart-item p{
+    color: #fff;
+    font-size: 11px;
+    padding: 1px;
+}
