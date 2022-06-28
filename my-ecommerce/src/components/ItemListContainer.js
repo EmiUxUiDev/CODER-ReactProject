@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/itemlistcontainer.css'
 import Info from './Info.js';
-import ListContainer from './ListContainer.js'
+import ItemList from './ItemList.js'
 
 export default function ItemListContainer({ bebida }) {
     return (
@@ -15,7 +15,7 @@ export default function ItemListContainer({ bebida }) {
                 <img className='item-img' src={require('../img/gyn-cup.png')} alt='Gyn cup served' />
             </section>
             <Info />
-            <ListContainer />
+            <ItemList />
         </div>
 
     )

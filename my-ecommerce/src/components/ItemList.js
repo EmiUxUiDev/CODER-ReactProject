@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../styles/listcontainer.css'
+import '../styles/itemlist.css'
 import Item from './Item.js'
 
 export default function ListContainer() {
