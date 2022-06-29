@@ -1,4 +1,3 @@
-import React from 'react'
 import '../styles/info.css'
 
 export default function Info() {

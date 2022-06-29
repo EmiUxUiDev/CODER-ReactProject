@@ -4,14 +4,13 @@ import ItemListContainer from './components/ItemListContainer.js'
 import Navbar from './components/Navbar.js'
 import Footer from './components/Footer.js'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Navbar />
       <ItemCount />
-      <ItemListContainer bebida='Gin'/>
+      <ItemListContainer />
       <Footer/>
     </div>
   );
 }
-export default App;

@@ -32,7 +32,7 @@ section img.item-img{
     width: 450px;
     filter: drop-shadow(15px 5px 15px rgb(0, 0, 0));
 }
-section .item-text .item-btn{
+.item-btn{
     margin-top: 1.5rem;
     padding: 0.5rem 0.8rem;
     font-size: 1.1rem;
@@ -44,8 +44,20 @@ section .item-text .item-btn{
     cursor: pointer;
     transition: all 200ms ease-in-out;
 }
-section .item-text .item-btn:hover{
+.item-btn:hover{
     color: #fff;
     border: 1px solid #fff;
     box-shadow: 0px 0px 25px 1px var(--clr-secondary-hover) ;
+}
+.wrapper-container{
+    display: flex;
+    flex-direction: column;
+}
+.load-btn{
+    width: 200px;
+    margin:1rem auto 8rem auto ;
+}
+.loader{
+    width: 50px;
+    margin: -5rem auto 6rem auto;
 }

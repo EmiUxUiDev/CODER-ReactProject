@@ -1,8 +1,8 @@
-import React from 'react'
 import '../styles/footer.css'
 
 export default function Footer() {
     return (
+        <>
         <section className='wrapper'>
             <div className='brand-container'>
                 <img className='big-logo' src={require('../img/gintocBigLogo.png')} alt='Brand logo'/>
@@ -24,5 +24,8 @@ export default function Footer() {
             </spam>
 
         </section>
+        <hr/>
+        <p className='copyright'>copyright @emidev</p>
+        </>
     )
 }

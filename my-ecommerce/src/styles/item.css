@@ -18,6 +18,8 @@ div.container-item{
     height: 160px;
     margin-top: -3rem;
     transition: all 250ms ease-in-out;
+    border: none;
+    border-radius: var(--rnd-strong);
 }
 
 .img-item:hover {
