@@ -7,19 +7,22 @@ export default function ItemListContainer() {
 
     const [products, setproducts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
-    const catchCards = () => {
-        setIsLoading(true)
-            setTimeout(()=>{
-                fetch('https://rickandmortyapi.com/api/character')
-                .then((res) => res.json())
-                .then((data) => setproducts(data.results))
-            .catch(error => console.log(error))
-            setIsLoading(false)
-            }, 2000)
-    }
+
+            useEffect(()=>{
+                setIsLoading(true)
+                setTimeout(()=>{
+                    fetch('https://rickandmortyapi.com/api/character')
+                    .then((res) => res.json())
+                    .then((data) => setproducts(data.results))
+                .catch(error => console.log(error))
+                setIsLoading(false)
+                }, 2000)  
+            },[])
+        
+        
 
     return (
-        <div className='wrapper-container'>
+            <div className='wrapper-container'>
             <section className='item-section'>
                 <div className='item-text'>
                     <h1>Enjoy your Gin, do it your way...</h1>
@@ -29,10 +32,8 @@ export default function ItemListContainer() {
                 <img className='item-img' src={require('../img/gyn-cup.png')} alt='Fresh gin cup served' />
             </section>
             <Info />
-            <button className='item-btn load-btn' onClick={catchCards}> Cargar cards</button>
             {isLoading && <img className='loader' src='tocLoader.gif' alt='Gif loader'/>}
             <ItemList gins={products} />
         </div>
-
     )
 }

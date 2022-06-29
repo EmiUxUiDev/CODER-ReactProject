@@ -60,4 +60,5 @@ section img.item-img{
 .loader{
     width: 50px;
     margin: -5rem auto 6rem auto;
+    z-index: 100;
 }
