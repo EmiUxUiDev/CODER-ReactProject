@@ -1,4 +1,4 @@
-div.nav-container{
+nav.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,23 +8,31 @@ div.nav-container{
     border-bottom: 1px solid var(--grey-transparent)
 }
 
-div.logo-container img{
+
+
+.logo-container img{
     width: 100px;
     cursor: pointer;
 }
 
-div.menu-container ul{
+
+.menu-container ul{
     display: flex;
     padding:0 1rem;
 }
 
-div.menu-container ul li{
+.menu-container ul li{
     padding: 1rem;
     list-style-type: none;
+}
+
+.menu-container ul li a{
+    padding: 1rem;
+    text-decoration: none;
     color: #fff;
     cursor: pointer;
 }
 
-div.menu-container ul li:hover{
+.menu-container ul li:hover{
     filter: drop-shadow(8px 8px 8px var(--clr-light-grey));
 }
