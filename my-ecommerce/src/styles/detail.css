@@ -1,0 +1,25 @@
+.wrapper-detail{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    margin: 2rem auto;
+    padding:1rem;
+    border: 1px solid var(--clr-secondary-hover);
+    border-radius: var(--rnd-med);
+    background: #fff;
+}
+
+.bar-detail{
+    width: 4px;
+    height: 50px;
+    border: none;
+    background-color: var(--clr-secondary-hover);
+    border-radius: var(--rnd-soft);
+}
+
+.description-detail{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
