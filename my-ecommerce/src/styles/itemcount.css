@@ -1,7 +1,7 @@
 .counter-wrapper{
     position: relative;
     width: 200px;
-    margin: 1rem auto;
+    margin: 3rem auto 0 auto;
     padding: 1rem;
     border-radius: var(--rnd-strong);
     display: flex;
@@ -14,12 +14,11 @@
 
 .counter-wrapper p{
     font-size: 1rem;
-    
 }
 
 .btn-container{
     width: 100px;
-    margin: 1rem 0.25rem 0 0.25rem;
+    margin: 0.25rem 0.25rem 0 0.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,22 +41,21 @@
 }
 
 .add-btn{
+    width: 140px;
     margin-top: 1rem;
-    padding: 0.4rem 0.8rem;
+    padding: 0.2rem 0.8rem;
     font-size: 1rem;
-    color: var(--clr-light-grey);
-    background: linear-gradient(0deg, var(--clr-secondary) 75%, var(--clr-secondary-hover) 100%);
-    border:1px solid rgb(146, 146, 146);
+    color: #fff;
+    background: transparent;
+    border:1px solid var(--clr-secondary-hover);
     border-radius: var(--rnd-strong);
     z-index: 20;
     cursor: pointer;
-    transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;  
 }
 
 .add-btn:hover{
-    color: #fff;
-    border: 1px solid #fff;
-    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;
+    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;  ;
 }
 
 #count{
@@ -65,6 +63,7 @@
     margin-top: -0.4rem;
 }
 .reset-btn{
+    width: 140px;
     margin-top: 1rem;
     padding: 0.2rem 0.8rem;
     font-size: 1rem;
@@ -78,5 +77,5 @@
 }
 
 .reset-btn:hover{
-    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;  
+    border:1px solid var(--clr-secondary-hover);  
 }

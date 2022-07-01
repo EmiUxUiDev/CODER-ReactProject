@@ -1,21 +1,39 @@
 .wrapper-detail{
-    width: 50%;
-    height: 50%;
+    max-width: 700px;
     display: flex;
+    flex-direction: column;
     align-items:center;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 2rem auto;
     padding:1rem;
     border: 1px solid var(--clr-secondary-hover);
     border-radius: var(--rnd-med);
-    background: #fff;
+    background-color: var(--light-black-transparent);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--light-white-transparent);
+    border-radius: 15px;
+}
+
+div.content-detail{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+.img-detail img{
+    border: none;
+    border-radius: var(--rnd-med);
 }
 
 .bar-detail{
-    width: 4px;
-    height: 50px;
+    width: 3px;
+    height: 240px;
+    margin: 1rem;
     border: none;
-    background-color: var(--clr-secondary-hover);
+    background-color: var(--clr-secondary);
     border-radius: var(--rnd-soft);
 }
 
@@ -23,3 +41,49 @@
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+
+.description-detail h2{
+    color: #fff;
+    padding: 1rem;
+}
+
+.btn-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+hr{margin-top: 1rem;}
+.btn-detail button{
+    margin-top: 1rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: var(--rnd-strong);
+    z-index: 20;
+    cursor: pointer;
+    transition: all 200ms ease-in-out; 
+}
+
+div.btn-detail .buy-btn{
+    margin-top: 1rem;
+    padding: 0.4rem 4rem;
+    font-size: 1rem;
+    color: var(--clr-light-grey);
+    background: linear-gradient(0deg, var(--clr-secondary) 75%, var(--clr-secondary-hover) 100%);
+    border:1px solid rgb(146, 146, 146);
+    border-radius: var(--rnd-strong);
+    z-index: 20;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+div.btn-detail .buy-btn:hover{
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;
+}
+.back-btn{width: 140px;}
+.back-btn:hover{border:1px solid var(--clr-secondary-hover);}

@@ -4,7 +4,6 @@ import ItemListContainer from '../ItemListContainer.js'
 export default function Home() {
     return (
         <>
-            <ItemCount />
             <ItemListContainer />
         </>
     )

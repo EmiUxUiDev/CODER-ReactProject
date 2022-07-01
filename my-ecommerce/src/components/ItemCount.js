@@ -16,7 +16,7 @@ export default function ItemCount({ stock }) {
 
     return (
         <div className='counter-wrapper'>
-            <p>Gin selected</p>
+    
             <div className='btn-container'>
                 <button className='btn' onClick={sub}><img id='dwn' src={require('../img/icons/chevron-dwn.png')} alt='Button down' /></button>
                 <p id='count'>{num}</p>
