@@ -20,7 +20,10 @@ export default function Detail() {
     }, [])
 
     return (
+        <>
+        <h1>GinToc - Detalle del producto</h1>
         <section className='wrapper-detail'>
+        
             <div className='content-detail'>
                 <div className='img-detail'>
                     <img src={detail.image} alt='Gin bottle selected' />
@@ -39,6 +42,7 @@ export default function Detail() {
                 <Link to='/'><button className='back-btn'>Volver</button></Link>
             </div>
         </section>
+        </>
     )
 }
 
