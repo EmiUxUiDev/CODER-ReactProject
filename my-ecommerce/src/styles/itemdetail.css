@@ -61,6 +61,7 @@ div.content-detail{
     margin-top: 1rem;
 }
 hr{margin-top: 1rem;}
+
 .btn-detail button{
     margin-top: 1rem;
     padding: 0.2rem 0.8rem;
@@ -91,5 +92,20 @@ div.btn-detail .buy-btn:hover{
     border: 1px solid #fff;
     box-shadow: 0px 0px 15px 1px var(--clr-secondary-hover) ;
 }
-.back-btn{width: 140px;}
+.back-btn{
+    width: 140px;
+    margin-top: 1rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+    border:1px solid #fff;
+    border-radius: var(--rnd-strong);
+    z-index: 20;
+    cursor: pointer;
+    transition: all 200ms ease-in-out; 
+    text-align: center;
+}
+
 .back-btn:hover{border:1px solid var(--clr-secondary-hover);}

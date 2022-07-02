@@ -10,10 +10,10 @@ export default function Item({ id, brand, path, summary }) {
                 <p>{summary}</p>
             </div>
             <hr />
-            <div className='btn-container-item'>
-            <Link to={`/Detail/${id}`}><button className='btn-item'>Ver detalle del producto</button></Link>
+            <Link to={`/Detail/${id}`}><div className='btn-container-item'>
+                <h4 id='btn-item'>Ver detalle del producto</h4>
                 <img className='img-btn-item' src={require('../img/icons/chevron-right.png')} alt='Icono detalle producto' />
-            </div>
+            </div></Link>
         </div>
     )
-}
+} 

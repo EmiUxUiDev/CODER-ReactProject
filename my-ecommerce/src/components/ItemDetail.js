@@ -1,4 +1,4 @@
-import '../styles/detail.css'
+import '../styles/itemdetail.css'
 import ItemCount from './ItemCount.js'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
@@ -21,7 +21,7 @@ export default function Detail() {
 
     return (
         <>
-        <h1>GinToc - Detalle del producto</h1>
+        <h1>GinToc - Product detail</h1>
         <section className='wrapper-detail'>
         
             <div className='content-detail'>
@@ -39,7 +39,7 @@ export default function Detail() {
             {/* <hr/> */}
             <div className='btn-detail'>
                 <button className='buy-btn'>Buy now</button>
-                <Link to='/'><button className='back-btn'>Volver</button></Link>
+                <Link to='/' className='back-btn'>Back</Link>
             </div>
         </section>
         </>

@@ -5,7 +5,7 @@ import Footer from './components/Footer.js'
 import { Routes, Route} from 'react-router-dom'
 import AboutUs from './components/AboutUs/AboutUs'
 import Contact from './components/Contact/Contact.js'
-import Detail from './components/Detail.js'
+import ItemDetail from './components/ItemDetail.js'
 
 export default function App() {
   return (
@@ -15,7 +15,7 @@ export default function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Contact' element={<Contact />}></Route>
-        <Route path='/Detail/:ginId' element={<Detail />}></Route>
+        <Route path='/Detail/:ginId' element={<ItemDetail />}></Route>
         {/* <Route path='*' element={<NotFound />}></Route> */}
       </Routes>
       <Footer />
