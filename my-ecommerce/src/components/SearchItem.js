@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/searchitem.css'
 import { useState, useEffect } from 'react'
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function SearchItem() {
   const [gins, setGin] = useState([])
@@ -18,7 +18,7 @@ export default function SearchItem() {
       .catch(error => console.log(error))
   }, [])
 
-// Funcion que toma valor de entrada del input con hook useState
+  // Funcion que toma valor de entrada del input con hook useState
   const searcher = (event) => {
     setSearch(event.target.value)
   }
@@ -38,7 +38,7 @@ export default function SearchItem() {
       <div className='title-wrapper'>
         <h4>-- Gin finder, choose one that suits you best ! --</h4>
       </div>
-      <div className='input-wrapper'> 
+      <div className='input-wrapper'>
         {/* Bajo el evento onChange, invoco la funcion que toma los valores q van ingresando al input y me setean el hook */}
         <input type='text' value={search} onChange={searcher} className='search-el' placeholder='Search'></input>
       </div>

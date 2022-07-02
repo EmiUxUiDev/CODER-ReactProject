@@ -30,12 +30,18 @@ div.input-wrapper{
     align-items: center;
     justify-content: center;
 }
-div.result-wrapper ul{
+div.result-wrapper{
+    width: 50%;
+    margin: 0.5rem auto;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items:flex-start;
+
 }
+
 div.result-wrapper ul li{
-    padding: 0.25rem;
-    list-style: none;
+    padding: 0.5rem;
+    list-style: none;  
+    
 }
+
