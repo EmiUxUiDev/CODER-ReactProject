@@ -35,20 +35,37 @@ export default function SearchItem() {
 
   return (
     <section className='main-wrapper'>
+
       <div className='title-wrapper'>
-        <h4>-- Gin finder, choose one that suits you best ! --</h4>
+        <h4>
+          -- Gin finder, choose one that suits you best ! --
+        </h4>
       </div>
       <div className='input-wrapper'>
         {/* Bajo el evento onChange, invoco la funcion que toma los valores q van ingresando al input y me setean el hook */}
-        <input type='text' value={search} onChange={searcher} className='search-el' placeholder='Search'></input>
+        <input
+          type='text'
+          value={search}
+          onChange={searcher} className='search-el' placeholder='Search'>
+        </input>
+
+        <section className='category-wrapper'>
+          <p>Origin</p>
+          <p>Price</p>
+        </section>
       </div>
       <div className='result-wrapper'>
         {ginResult.map((gin) => (
           <ul>
-            <Link to={`/Detail/${gin.id}`}><li>{`Id: ${gin.id} - name: ${gin.name} - gender: ${gin.gender} - origin: ${gin.origin.name}`}</li></Link>
+            <Link to={`/Detail/${gin.id}`}>
+              <li>
+                {`Id: ${gin.id} - name: ${gin.name} - gender: ${gin.gender} - origin: ${gin.origin.name}`}
+              </li>
+            </Link>
           </ul>
         ))}
       </div>
+
     </section>
   )
 }

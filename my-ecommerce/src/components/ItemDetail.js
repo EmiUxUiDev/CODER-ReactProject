@@ -21,27 +21,29 @@ export default function Detail() {
 
     return (
         <>
-        <h1>GinToc - Product detail</h1>
-        <section className='wrapper-detail'>
-        
-            <div className='content-detail'>
-                <div className='img-detail'>
-                    <img src={detail.image} alt='Gin bottle selected' />
+            <h1>GinToc - Product detail</h1>
+            <section className='wrapper-detail'>
+
+                <div className='content-detail'>
+                    <div className='img-detail'>
+                        <img
+                            src={detail.image}
+                            alt='Gin bottle selected' />
+                    </div>
+                    <div className='bar-detail'></div>
+                    <div className="description-detail">
+                        <h2>Name : {detail.name}</h2>
+                        <p>Specie: {detail.species}</p>
+                        <p>Gender: {detail.gender}</p>
+                        <ItemCount />
+                    </div>
                 </div>
-                <div className='bar-detail'></div>
-                <div className="description-detail">
-                    <h2>Name: {detail.name} </h2>
-                    <p>Specie: {detail.species}</p>
-                    <p>Gender: {detail.gender}</p>
-                    <ItemCount />
+                {/* <hr/> */}
+                <div className='btn-detail'>
+                    <button className='buy-btn'>Buy now</button>
+                    <Link to='/' className='back-btn'>Back</Link>
                 </div>
-            </div>
-            {/* <hr/> */}
-            <div className='btn-detail'>
-                <button className='buy-btn'>Buy now</button>
-                <Link to='/' className='back-btn'>Back</Link>
-            </div>
-        </section>
+            </section>
         </>
     )
 }
