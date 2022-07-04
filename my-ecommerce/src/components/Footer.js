@@ -33,7 +33,7 @@ export default function Footer() {
 
             </section>
             <hr />
-            <p className='copyright'>copyright @emidev</p>
+            <p className='copyright'>copyright 2022 - @emidev</p>
         </>
     )
 }

@@ -4,7 +4,7 @@ import Info from './Info.js';
 import ItemList from './ItemList.js'
 import SearchItem from './SearchItem.js'
 
-export default function ItemListContainer() {
+export default function ItemListContainer({subject}) {
 
     const [products, setproducts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
@@ -32,10 +32,11 @@ export default function ItemListContainer() {
                 </div>
                 <img className='item-img' src={require('../img/gyn-cup.png')} alt='Fresh gin cup served' />
             </section>
-            <SearchItem />
-            <Info />
+            <SearchItem products={products} />
+            <h3> {subject} items</h3>
             {isLoading && <img className='loader' src='tocLoader.gif' alt='Gif loader' />}
             <ItemList gins={products} />
+            <Info />
         </div>
     )
 }

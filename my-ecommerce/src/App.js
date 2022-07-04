@@ -12,7 +12,8 @@ export default function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home subject={'Home'}/>}></Route>
+        <Route path='/Category/:filter' element={<Home subject={'Filtered'}/>}></Route>
         <Route path='/AboutUs' element={<AboutUs />}></Route>
         <Route path='/Contact' element={<Contact />}></Route>
         <Route path='/Detail/:ginId' element={<ItemDetail />}></Route>

@@ -1,10 +1,10 @@
 import React from 'react'
-import ItemCount from '../ItemCount.js'
 import ItemListContainer from '../ItemListContainer.js'
-export default function Home() {
+
+export default function Home({subject}) {
     return (
         <>
-            <ItemListContainer />
+            <ItemListContainer subject={subject}/>
         </>
     )
 }
