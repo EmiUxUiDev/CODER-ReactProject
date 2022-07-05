@@ -2,28 +2,36 @@ import { useEffect, useState } from 'react'
 import '../styles/itemlistcontainer.css'
 import Info from './Info.js';
 import ItemList from './ItemList.js'
-import SearchItem from './SearchItem.js'
+import { useParams } from 'react-router-dom';
 
-export default function ItemListContainer({subject}) {
+export default function ItemListContainer({ subject }) {
 
-    const [products, setproducts] = useState([])
+    const [products, setProducts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
+    const { filter } = useParams()
+    console.log(filter)
+
+    fetch('https://rickandmortyapi.com/api/character')
+        .then((res) => res.json())
+        .then((data) => setProducts(data.results))
+        .catch(error => console.log(error))
 
     useEffect(() => {
         setIsLoading(true)
         setTimeout(() => {
-            fetch('https://rickandmortyapi.com/api/character')
-                .then((res) => res.json())
-                .then((data) => setproducts(data.results))
-                .catch(error => console.log(error))
+            const navegation = filter ? products.filter((item)=>
+                item.status === filter
+            ):products
+            setProducts(navegation)
             setIsLoading(false)
         }, 2000)
-    }, [])
 
+    }, [filter])
 
 
     return (
         <div className='wrapper-container'>
+
             <section className='item-section'>
                 <div className='item-text'>
                     <h1>Enjoy your Gin, do it your way...</h1>
@@ -32,8 +40,15 @@ export default function ItemListContainer({subject}) {
                 </div>
                 <img className='item-img' src={require('../img/gyn-cup.png')} alt='Fresh gin cup served' />
             </section>
-            <SearchItem products={products} />
+
+            <div className='title-wrapper'>
+                <h4>
+                    -- Gin finder, choose one that suits you best ! --
+                </h4>
+            </div>
+
             <h3> {subject} items</h3>
+
             {isLoading && <img className='loader' src='tocLoader.gif' alt='Gif loader' />}
             <ItemList gins={products} />
             <Info />

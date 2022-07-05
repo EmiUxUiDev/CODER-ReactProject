@@ -13,10 +13,10 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home subject={'Home'}/>}></Route>
-        <Route path='/Category/:filter' element={<Home subject={'Filtered'}/>}></Route>
-        <Route path='/AboutUs' element={<AboutUs />}></Route>
-        <Route path='/Contact' element={<Contact />}></Route>
-        <Route path='/Detail/:ginId' element={<ItemDetail />}></Route>
+        <Route path='/category/:filter' element={<Home subject={'Filtered'}/>}></Route>
+        <Route path='/aboutUs' element={<AboutUs />}></Route>
+        <Route path='/contact' element={<Contact />}></Route>
+        <Route path='/detail/:ginId' element={<ItemDetail />}></Route>
         {/* <Route path='*' element={<NotFound />}></Route> */}
       </Routes>
       <Footer />

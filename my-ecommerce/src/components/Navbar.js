@@ -8,18 +8,18 @@ export default function Navbar() {
             <nav className='nav-container'>
                 <div className='logo-container'>
                     <Link to={'/'}><img className='logo-img' src={require('../img/gintocLogo.png')} alt='Gintoc brand logo' /></Link>
-                    
+
                 </div>
                 <div className='menu-container'>
                     <ul>
                         <li>
-                            <Link to='/'>Home</Link>
+                            <Link to='/category/alive'>Alive</Link>
                         </li>
                         <li>
-                            <Link to='/AboutUs'>About us</Link>
+                            <Link to='/category/dead'>Dead</Link>
                         </li>
                         <li>
-                            <Link to='/Contact'>Contact</Link>
+                            <Link to='/category/unknow'>Unknow</Link>
                         </li>
                     </ul>
                 </div>
