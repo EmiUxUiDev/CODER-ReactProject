@@ -9,24 +9,21 @@ export default function ItemListContainer({ subject }) {
     const [products, setProducts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const { filter } = useParams()
-    console.log(filter)
 
-    fetch('https://rickandmortyapi.com/api/character')
-        .then((res) => res.json())
-        .then((data) => setProducts(data.results))
-        .catch(error => console.log(error))
 
     useEffect(() => {
         setIsLoading(true)
         setTimeout(() => {
-            const navegation = filter ? products.filter((item)=>
-                item.status === filter
-            ):products
-            setProducts(navegation)
-            setIsLoading(false)
+            fetch('https://rickandmortyapi.com/api/character')
+                .then((res) => res.json())
+                .then((data) => {
+                    const val = filter ? setProducts(data.results.filter(item => item.status === val)) :
+                        setProducts(data.result)
+                })
+                .catch(error => console.log(error))
         }, 2000)
 
-    }, [filter])
+    }, [])
 
 
     return (
