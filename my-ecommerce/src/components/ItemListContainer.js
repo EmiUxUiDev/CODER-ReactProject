@@ -17,9 +17,14 @@ export default function ItemListContainer({ subject }) {
             fetch('https://rickandmortyapi.com/api/character')
                 .then((res) => res.json())
                 .then((data) => {
-                    filter ? setProducts(data.results.filter(item => item.status === filter)) :
+                    if (filter) {
+                        const result = data.results.filter((item )=> item.status === filter)
+                        setProducts(result)
+                        setIsLoading(false)
+                    } else {
                         setProducts(data.results)
-                    setIsLoading(false)
+                        setIsLoading(false)
+                    }
                 })
                 .catch(error => console.log(error))
             setIsLoading(false)
@@ -47,7 +52,7 @@ export default function ItemListContainer({ subject }) {
 
             <h3> {subject} items</h3>
 
-            {isLoading && <img className='loader' src='tocLoader.gif' alt='Gif loader' />}
+            {isLoading && <img className='loader' src='./tocLoader.gif' alt='Gif loader' />}
             <ItemList gins={products} />
             <Info />
         </div>
