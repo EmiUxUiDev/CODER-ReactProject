@@ -33,7 +33,7 @@ div.item-text p {
 
 section img.item-img {
     z-index: -1;
-    width: 450px;
+    width: 400px;
     filter: drop-shadow(15px 5px 15px rgb(0, 0, 0));
 }
 
@@ -68,7 +68,7 @@ section img.item-img {
 
 .loader {
     width: 50px;
-    margin: -5rem auto 6rem auto;
+    margin: 1rem auto 2rem auto;
     z-index: 100;
 }
 

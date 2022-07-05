@@ -52,7 +52,7 @@ export default function ItemListContainer({ subject }) {
 
             <h3> {subject} items</h3>
 
-            {isLoading && <img className='loader' src='./tocLoader.gif' alt='Gif loader' />}
+            {isLoading && <img className='loader' src='../tocLoader.gif' alt='Gif loader' />}
             <ItemList gins={products} />
             <Info />
         </div>

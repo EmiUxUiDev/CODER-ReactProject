@@ -13,13 +13,13 @@ export default function Navbar() {
                 <div className='menu-container'>
                     <ul>
                         <li>
-                            <Link to='/category/alive'>Alive</Link>
+                            <Link to='/category/Alive'>Alive</Link>
                         </li>
                         <li>
-                            <Link to='/category/dead'>Dead</Link>
+                            <Link to='/category/Dead'>Dead</Link>
                         </li>
                         <li>
-                            <Link to='/category/unknow'>Unknow</Link>
+                            <Link to='/category/unknown'>Unknown</Link>
                         </li>
                     </ul>
                 </div>
