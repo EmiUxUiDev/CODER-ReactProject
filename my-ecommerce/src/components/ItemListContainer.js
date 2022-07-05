@@ -18,7 +18,7 @@ export default function ItemListContainer({ subject }) {
                 .then((res) => res.json())
                 .then((data) => {
                     if (filter) {
-                        const result = data.results.filter((item )=> item.status === filter)
+                        const result = data.results.filter((item) => item.status === filter)
                         setProducts(result)
                         setIsLoading(false)
                     } else {
@@ -52,7 +52,13 @@ export default function ItemListContainer({ subject }) {
 
             <h3> {subject} items</h3>
 
-            {isLoading && <img className='loader' src='../tocLoader.gif' alt='Gif loader' />}
+            {isLoading &&
+                <div className='loader' >
+                    <img src='../tocLoader.gif' alt='Gif loader' >
+                        
+                    </img>
+                </div>
+            }
             <ItemList gins={products} />
             <Info />
         </div>
