@@ -9,7 +9,7 @@ export default function ItemListContainer({ subject }) {
     const [products, setProducts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
     const { filter } = useParams()
-
+    console.log(filter);
 
     useEffect(() => {
         setIsLoading(true)
@@ -17,13 +17,14 @@ export default function ItemListContainer({ subject }) {
             fetch('https://rickandmortyapi.com/api/character')
                 .then((res) => res.json())
                 .then((data) => {
-                    const val = filter ? setProducts(data.results.filter(item => item.status === val)) :
-                        setProducts(data.result)
+                    filter ? setProducts(data.results.filter(item => item.status === filter)) :
+                        setProducts(data.results)
+                    setIsLoading(false)
                 })
                 .catch(error => console.log(error))
+            setIsLoading(false)
         }, 2000)
-
-    }, [])
+    }, [filter])
 
 
     return (
