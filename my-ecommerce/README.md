@@ -1,7 +1,19 @@
 ![Logo REACT](https://raw.githubusercontent.com/EmiUxUiDev/CODER-ReactProject/32b09980167f3aec147811c1d10fddc21f41692b/my-ecommerce/public/img/gintocLogobkg.png)
 # Getting Started with GinToc App
 
+
+GinToc is a ecommerce where you will find a lot alcoholic beverages, specialized in GIN.
+
+At this moment of the project, you can navigate throught all items, select one of them, see a detailed description and information about this specific product but also click to add to cart.
+
+The idea is that you can buy adding to cart diferents products and individual quantities of each one of them but also modify or cancel what you added if you want it.
+
+Feel free to navegate and enjoy the stunning experience of virtual Gin splash!
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+***
 
 ## Available Scripts
 
@@ -14,6 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
+
 
 ### `npm test`
 
