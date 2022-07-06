@@ -50,7 +50,7 @@ export default function ItemListContainer({ subject }) {
                 </h4>
             </div>
 
-            <h3> {subject} items</h3>
+            <h3>{subject !== 'Home'?`${subject} items: ${filter}`:'All items'}</h3>
 
             {isLoading &&
                 <div className='loader' >

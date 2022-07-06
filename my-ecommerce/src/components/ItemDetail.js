@@ -3,6 +3,7 @@ import ItemCount from './ItemCount.js'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import { click } from '@testing-library/user-event/dist/click'
 
 export default function Detail() {
     const params = useParams()
@@ -18,6 +19,7 @@ export default function Detail() {
             })
             .catch(error => console.log(error))
     }, [])
+
 
     return (
         <>
@@ -38,7 +40,7 @@ export default function Detail() {
                         <ItemCount />
                     </div>
                 </div>
-                {/* <hr/> */}
+                
                 <div className='btn-detail'>
                     <button className='buy-btn'>Buy now</button>
                     <Link to='/' className='back-btn'>Back</Link>
