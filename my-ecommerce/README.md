@@ -1,4 +1,4 @@
-![Logo REACT](https://github.com/EmiUxUiDev/CODER-ReactProject/blob/main/SmallReact.png)
+![Logo REACT](https://raw.githubusercontent.com/EmiUxUiDev/CODER-ReactProject/32b09980167f3aec147811c1d10fddc21f41692b/my-ecommerce/public/img/gintocLogobkg.png)
 # Getting Started with GinToc App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
