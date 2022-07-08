@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export default function Detail() {
     const params = useParams()
     const [detail, setDetail] = useState([])
-
+    const [countVis, setCountVis] = useState(true)
 
     useEffect(() => {
         fetch(`https://rickandmortyapi.com/api/character/${params.ginId}`)
@@ -18,38 +18,64 @@ export default function Detail() {
             })
             .catch(error => console.log(error))
     }, [])
-   
+
     const countHandler = (among) => {
-        const amongProd = among
-        console.log(amongProd)
+        // const amongProd = among
+        // console.log(amongProd)
+        among && setCountVis(false)
     }
 
     return (
-        <>
-            <h1>GinToc - Product detail</h1>
-            <section className='wrapper-detail'>
+        countVis ?
+            <>
+                <h1>GinToc - Product detail</h1>
+                <section className='wrapper-detail'>
 
-                <div className='content-detail'>
-                    <div className='img-detail'>
-                        <img
-                            src={detail.image}
-                            alt='Gin bottle selected' />
+                    <div className='content-detail'>
+                        <div className='img-detail'>
+                            <img
+                                src={detail.image}
+                                alt='Gin bottle selected' />
+                        </div>
+                        <div className='bar-detail'></div>
+                        <div className="description-detail">
+                            <h2>Name : {detail.name}</h2>
+                            <p>Specie: {detail.species}</p>
+                            <p>Gender: {detail.gender}</p>
+                            <ItemCount onCountHandler={countHandler} />
+                        </div>
                     </div>
-                    <div className='bar-detail'></div>
-                    <div className="description-detail">
-                        <h2>Name : {detail.name}</h2>
-                        <p>Specie: {detail.species}</p>
-                        <p>Gender: {detail.gender}</p>
-                        <ItemCount onCountHandler={countHandler} />
+
+                    <div className='btn-detail'>
+                        <button className='buy-btn'>Buy now</button>
+                        <Link to='/' className='back-btn'>Back</Link>
                     </div>
-                </div>
-                
-                <div className='btn-detail'>
-                    <button className='buy-btn'>Buy now</button>
-                    <Link to='/' className='back-btn'>Back</Link>
-                </div>
-            </section>
-        </>
+                </section>
+            </>
+            : <>
+                <h1>GinToc - Product detail</h1>
+                <section className='wrapper-detail'>
+
+                    <div className='content-detail'>
+                        <div className='img-detail'>
+                            <img
+                                src={detail.image}
+                                alt='Gin bottle selected' />
+                        </div>
+                        <div className='bar-detail'></div>
+                        <div className="description-detail">
+                            <h2>Name : {detail.name}</h2>
+                            <p>Specie: {detail.species}</p>
+                            <p>Gender: {detail.gender}</p>
+                        </div>
+                    </div>
+
+                    <div className='btn-detail'>
+                        <Link to='/Cart' className='buy-btn'>Buy now</Link>
+                        <Link to='/' className='back-btn'>Back</Link>
+                    </div>
+                </section>
+            </>
     )
 }
 
