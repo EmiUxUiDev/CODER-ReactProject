@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import '../styles/itemcount.css'
 
-export default function ItemCount({ stock, clickAddHandler }) {
+export default function ItemCount(props) {
     var stock = 7
     const [num, setNum] = useState(0)
 
-    const addHandler = () => num < stock ? setNum(num + 1)
+    const upHandler = () => num < stock ? setNum(num + 1)
         : alert(`Stock of product: ${num}`)
 
     const subHandler = () => num > 0 ? setNum(num - 1)
@@ -13,6 +13,8 @@ export default function ItemCount({ stock, clickAddHandler }) {
 
     const resetHandler = () => setNum(0)
 
+    const CounterValHandler = ()=>{props.onCountHandler(num)}
+    
 
     return (
         <div className='counter-wrapper'>
@@ -25,12 +27,22 @@ export default function ItemCount({ stock, clickAddHandler }) {
 
                 <p id='count'>{num}</p>
 
-                <button className='btn' onClick={addHandler}>
+                <button className='btn'
+                    onClick={upHandler}>
                     <img id='up' src={require('../img/icons/chevron-up.png')} alt='Button up' />
                 </button>
-            </div> 
-            <button className='add-btn' >Add to cart</button>
-            <button className='reset-btn' onClick={resetHandler}>Reset</button>
+
+            </div>
+
+            <button className='add-btn'
+                onClick={CounterValHandler}>
+                Add to cart
+            </button>
+
+            <button className='reset-btn'
+                onClick={resetHandler}>
+                Reset
+            </button>
         </div>
     )
-}
+}  

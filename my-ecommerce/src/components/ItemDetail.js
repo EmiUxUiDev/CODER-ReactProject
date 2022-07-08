@@ -3,7 +3,6 @@ import ItemCount from './ItemCount.js'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { click } from '@testing-library/user-event/dist/click'
 
 export default function Detail() {
     const params = useParams()
@@ -19,7 +18,11 @@ export default function Detail() {
             })
             .catch(error => console.log(error))
     }, [])
-
+   
+    const countHandler = (among) => {
+        const amongProd = among
+        console.log(amongProd)
+    }
 
     return (
         <>
@@ -37,7 +40,7 @@ export default function Detail() {
                         <h2>Name : {detail.name}</h2>
                         <p>Specie: {detail.species}</p>
                         <p>Gender: {detail.gender}</p>
-                        <ItemCount />
+                        <ItemCount onCountHandler={countHandler} />
                     </div>
                 </div>
                 
